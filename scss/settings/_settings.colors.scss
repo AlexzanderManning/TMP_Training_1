@@ -1,0 +1,32 @@
+/* Settings refer to all your global configurations and variables, like sizes, colors, and fonts. They should be used to aid in your build configuration, and therefore should not contain actual CSS code */
+
+///*----------------------------------*\
+//  #COLORS
+//\*----------------------------------*/
+
+// Setting up a colour palette which allows us to theme the entire project from one
+// location.
+
+// Colour palette.
+
+  /* ========COLORS======= */
+  /* Background Colors */
+  $main-background:#FFFFFF;
+  $secondary-background: rgb(235, 247, 245);
+
+  // /* Primary Colors */
+  $primary-color:rgb(0, 148, 95);
+  $secondary-color: rgb(0, 158, 119);
+
+  // /* Hover State Colors */
+  // $primary-hover: ;
+  // $secondary-hover: ;
+
+  /* Accent Colors */
+  $accent-color--1: rgb(233, 115, 0);
+  $accent-color--2: rgb(191, 208, 153);
+ 
+
+  // /* Neutral */
+  $neutral-color--1: #888888;
+  $neutral-color--2: #666666;

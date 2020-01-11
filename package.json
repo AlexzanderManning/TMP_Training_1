@@ -1,0 +1,23 @@
+{
+  "name": "tmp_training_1",
+  "version": "1.0.0",
+  "description": "My take home challenge for TMP WorldWide",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexzanderManning/TMP_Training_1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexzanderManning/TMP_Training_1/issues"
+  },
+  "homepage": "https://github.com/AlexzanderManning/TMP_Training_1#readme",
+  "dependencies": {
+    "node-sass": "^4.13.0"
+  }
+}

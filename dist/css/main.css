@@ -1,0 +1,872 @@
+@charset "UTF-8";
+/**
+ * CONTENTS
+ *
+ * SETTINGS
+ * Font Imports.........Where fonts are imported into stlyesheet.
+ * Colors...............Globally available color variables.
+ *
+ * TOOLS
+ * Functions.............Useful Functions.
+ * Mixins...............Useful mixins.
+ *
+ * GENERIC
+ * Box-sizing...........Better default `box-sizing`.
+ * Font-Sizing..........Root font size setting.
+ * Normalize.css........A level playing field.
+ * CSS Reset............Basic reset on top of Normalize.css.
+ * 
+ *
+ * ELEMENTS
+ * Headings.............H1–H6 Styles.
+ * Images...............Image Styles.
+ * Links................Link Styles.
+ * List.................List Styles.
+ * Paragrpahs...........Paragraph Styles.
+ * Qoutes...............Quote Styles.
+ *
+ *
+ * OBJECTS
+ * Wrappers.............Wrapping and constraining elements.
+ * Horizontal Rule......Horizontal Rule styles.
+ *
+ *
+ * COMPONENTS
+ * Buttons..............Button Styles.
+ * Logo.................Logo section styles.
+ * Hero Section.........Hero Section Styles.
+ * Features Section.....Features section styles.
+ * Aside Section........Aside section styles.
+ * Testimonial Section..Testimonial Section styles.
+ * Footer...............Footer Styles.
+ * Test Component.......Blank Component used testing styles and debugging.
+ *       
+ *
+ * Utilties
+ * Text.................Text helpers.
+ * Spacing..............Margin and padding helpers.
+ * Flex.................Flexbox helpers.
+ * Shame................Where shameful css resides.
+ */
+/*------------------------------------*\
+          SETTINGS IMPORTS
+\*------------------------------------*/
+/* =========Font Imports=========== */
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower&display=swap");
+/* ========FONTS======== */
+/* Settings refer to all your global configurations and variables, like sizes, colors, and fonts. They should be used to aid in your build configuration, and therefore should not contain actual CSS code */
+/* ========COLORS======= */
+/* Background Colors */
+/* Accent Colors */
+/*------------------------------------*\
+          TOOLS IMPORTS
+\*------------------------------------*/
+/*------------------------------------*\
+          GENERIC STYLES IMPORTS
+\*------------------------------------*/
+:root {
+  font-size: 1rem; }
+
+/* Box Sizing */
+:root {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Correct the line height in all browsers.
+ * 3. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+/* Document
+   ========================================================================== */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  line-height: 1.15;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 3 */
+  -webkit-text-size-adjust: 100%;
+  /* 3 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+  margin: 0; }
+
+/**
+ * Add the correct display in IE 9-.
+ */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block; }
+
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */ }
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+a:active,
+a:hover {
+  outline-width: 0; }
+
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit; }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000; }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+video {
+  display: inline-block; }
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none; }
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */ }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+details,
+menu {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+canvas {
+  display: inline-block; }
+
+/**
+ * Add the correct display in IE.
+ */
+template {
+  display: none; }
+
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+[hidden] {
+  display: none; }
+
+/**
+ * A very simple reset that sits on top of Normalize.css.
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+/*------------------------------------*\
+          ELEMENT STYLE IMPORTS
+\*------------------------------------*/
+/*------------------------------------*\
+  #HEADINGS
+\*------------------------------------*/
+/**
+ * Simple default styles for headings 1 through 6.
+ */
+h1, h2, h3, h4, h5, h6 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #00945f; }
+
+h1 {
+  font-size: 2.25rem; }
+
+h2 {
+  font-size: 1.75rem; }
+
+h3 {
+  font-size: 1.5rem; }
+
+h4 {
+  font-size: 1.25rem; }
+
+h5 {
+  font-size: 1.125rem; }
+
+h6 {
+  font-size: 1rem; }
+
+/*------------------------------------*\
+  #LINKS
+\*------------------------------------*/
+/**
+ * Default styles for simple hyperlinks.
+ */
+a {
+  text-decoration: none; }
+
+/*------------------------------------*\
+  #LISTS
+\*------------------------------------*/
+/**
+ * Visually offset definition titles from their definitions.
+ */
+dt {
+  font-weight: bold; }
+
+ul {
+  list-style: none; }
+
+/*------------------------------------*\
+  #IMAGES
+\*------------------------------------*/
+/**
+ * 1. Fluid images for responsive purposes.
+ * 2. Offset `alt` text from surrounding copy.
+ * 3. Setting `vertical-align` removes the whitespace that appears under `img`
+ *    elements when they are dropped into a page as-is. Safer alternative to
+ *    using `display: block;`.
+ */
+img {
+  max-width: 100%;
+  /* [1] */
+  font-style: italic;
+  /* [2] */
+  vertical-align: middle;
+  /* [3] */ }
+
+/**
+ * 1. If a `width` and/or `height` attribute have been explicitly defined, let’s
+ *    not make the image fluid.
+ */
+img[width],
+img[height] {
+  /* [1] */
+  max-width: none; }
+
+p {
+  font-size: 1rem;
+  color: #888888;
+  line-height: 1.85; }
+
+/*------------------------------------*\
+  #QUOTES
+\*------------------------------------*/
+/**
+ * Basic styling for quoted text.
+ */
+q {
+  font-style: italic;
+  quotes: "‘" "’"; }
+  q:before {
+    content: open-quote; }
+  q:after {
+    content: close-quote; }
+
+blockquote {
+  quotes: "“" "”"; }
+  blockquote p {
+    text-indent: -0.42em; }
+    blockquote p:before {
+      content: open-quote; }
+    blockquote p:after {
+      content: no-close-quote; }
+    blockquote p:last-of-type {
+      margin-bottom: 0; }
+      blockquote p:last-of-type:after {
+        content: close-quote; }
+
+/*------------------------------------*\
+            OBJECT IMPORTS
+\*------------------------------------*/
+.page-container--mobile {
+  margin: 0 auto;
+  max-width: 90%; }
+
+.horizontal-rule {
+  color: #00945f;
+  width: 25%;
+  border-top: 1.5px solid;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: .75rem; }
+
+.horizontal-rule--2 {
+  border-top: 1px solid #00945f;
+  margin: 0; }
+
+/*------------------------------------*\
+         COMPONENT STYLES IMPORTS
+\*------------------------------------*/
+.logo {
+  width: 60%;
+  margin: 0 auto;
+  padding: 1.5rem 0; }
+
+.hero__img {
+  background-color: red;
+  height: 15rem;
+  background: url("../../dist/images/hero-mobile.png") no-repeat;
+  background-position: left -20px center; }
+
+.btn--primary {
+  display: block;
+  margin: 1rem auto;
+  padding: .5rem 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: .07rem;
+  background-color: #e97300;
+  color: white;
+  border: none; }
+
+.feature {
+  border-bottom: 0.5px solid #888888;
+  margin-bottom: 1.5rem; }
+  .feature p {
+    margin: 1rem auto; }
+  .feature a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #bfd099; }
+
+.feature-helper {
+  border: none; }
+
+.aside {
+  margin: 1rem auto;
+  margin-bottom: 2rem; }
+  .aside p {
+    margin: 0 auto;
+    padding: .75rem;
+    background-color: #ebf7f5; }
+
+.aside__header p {
+  font-size: 1.3rem;
+  text-align: center;
+  padding: .75rem .5rem;
+  letter-spacing: .05rem;
+  background-color: #00945f;
+  color: white; }
+
+.testimony__body {
+  position: relative; }
+  .testimony__body p {
+    margin: 0 auto;
+    margin-top: .75rem;
+    margin-bottom: .75rem;
+    width: 50%;
+    color: #666666;
+    font-style: italic;
+    text-align: center; }
+  .testimony__body .testimony__name {
+    font-style: normal;
+    color: #009e77; }
+
+.testimony__img {
+  margin-top: 2rem;
+  text-align: center; }
+
+.testimony__qoute {
+  position: absolute;
+  left: 25%; }
+
+.footer {
+  width: 90%;
+  margin: 2rem auto; }
+
+.social-media {
+  display: flex;
+  margin-bottom: 1.5rem; }
+  .social-media img {
+    width: 2rem;
+    margin-right: .5rem; }
+
+.footer__policy {
+  line-height: 1.5;
+  text-align: left;
+  font-size: .7rem;
+  margin-bottom: 1.5rem; }
+  .footer__policy span {
+    color: #888888;
+    text-decoration: underline; }
+
+.footer__privacy-statement {
+  font-size: .7rem;
+  color: black; }
+
+/*------------------------------------*\
+          UTILITIY CLASSES IMPORTS
+\*------------------------------------*/
+/*------------------------------------*\
+  TEXT HELPER CLASSES
+\*------------------------------------*/
+.text-center {
+  text-align: center; }
+
+.letter-spacing--1 {
+  letter-spacing: .05rem; }
+
+/**
+ * Simple default styles for headings 1 through 6 for the cases when 
+   don't want to use an heading tag.
+ */
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #00945f; }
+
+.h1 {
+  font-size: 2.25rem;
+  line-height: 1.2; }
+
+.h2 {
+  font-size: 1.75rem;
+  line-height: 1.2; }
+
+.h3 {
+  font-size: 1.5rem;
+  line-height: 1.2; }
+
+.h4 {
+  font-size: 1.25rem;
+  line-height: 1.2; }
+
+.h5 {
+  font-size: 1.125rem;
+  line-height: 1.2; }
+
+.h6 {
+  font-size: 1rem;
+  line-height: 1.2; }
+
+/*------------------------------------*\
+  SPACING HELPER CLASSES
+\*------------------------------------*/
+.mt--1 {
+  margin-top: 1rem; }
+
+.mt--2 {
+  margin-top: 2rem; }
+
+.mt--3 {
+  margin-top: 3rem; }
+
+.mt--4 {
+  margin-top: 4rem; }
+
+.mt--5 {
+  margin-top: 5rem; }
+
+.mt--half {
+  margin-top: .5rem; }
+
+.mb--1 {
+  margin-bottom: 1rem; }
+
+.mb--2 {
+  margin-bottom: 2rem; }
+
+.mb--3 {
+  margin-bottom: 3rem; }
+
+.mb--4 {
+  margin-bottom: 4rem; }
+
+.mb--5 {
+  margin-bottom: 5rem; }
+
+.mb--half {
+  margin-bottom: .5rem; }
+
+.pt--1 {
+  padding-top: 1rem; }
+
+.pt--2 {
+  padding-top: 2rem; }
+
+.pt--3 {
+  padding-top: 3rem; }
+
+.pt--4 {
+  padding-top: 4rem; }
+
+.pt--5 {
+  padding-top: 5rem; }
+
+.pb--1 {
+  padding-bottom: 1rem; }
+
+.pb--2 {
+  padding-bottom: 2rem; }
+
+.pb--3 {
+  padding-bottom: 3rem; }
+
+.pb--4 {
+  padding-bottom: 4rem; }
+
+.pb--5 {
+  padding-bottom: 5rem; }
+
+/*------------------------------------*\
+  FLEXBOX HELPER CLASSES
+\*------------------------------------*/
+.flex {
+  display: flex; }
+
+.flex--wrap {
+  flex-flow: wrap; }
+
+.flex--row-column {
+  flex-direction: column; }
+
+.flex--center {
+  justify-content: center; }
+
+.flex--space-between {
+  justify-content: space-around; }
+
+.flex--align-space-around {
+  align-content: space-around; }
+
+/*------------------------------------*\
+  #SHAME.CSS
+\*------------------------------------*/

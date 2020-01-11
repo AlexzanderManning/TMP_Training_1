@@ -1,0 +1,15 @@
+.feature{
+  border-bottom: .5px solid $neutral-color--1;
+  margin-bottom: 1.5rem;
+  p{
+    margin: 1rem auto;
+  }
+   a{
+     font-family: $font-primary;
+     color:$accent-color--2;
+   }
+}
+
+.feature-helper{
+  border: none;
+}

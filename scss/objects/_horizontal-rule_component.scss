@@ -1,0 +1,13 @@
+.horizontal-rule{
+  color: $primary-color;
+  width: 25%;
+  border-top: 1.5px solid;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: .75rem;
+}
+
+.horizontal-rule--2{
+  border-top: 1px solid $primary-color;
+  margin: 0;
+}

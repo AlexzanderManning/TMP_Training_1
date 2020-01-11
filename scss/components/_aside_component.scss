@@ -1,0 +1,22 @@
+.aside{
+  margin: 1rem auto;
+  margin-bottom: 2rem;
+
+  p{
+    margin: 0 auto;
+    padding: .75rem;
+    background-color: $secondary-background;
+  }
+}
+
+.aside__header{
+
+  p{
+    font-size: 1.3rem;
+    text-align: center;
+    padding: .75rem .5rem;
+    letter-spacing: .05rem;
+    background-color: $primary-color;
+    color: white;
+  }
+}
