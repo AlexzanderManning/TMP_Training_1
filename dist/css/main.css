@@ -659,7 +659,7 @@ blockquote {
 
 .hero__img {
   height: 15rem;
-  background: url("../../dist/images/hero-mobile.png") no-repeat;
+  background: url("../images/hero-mobile.png") no-repeat;
   background-position: left center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -669,7 +669,7 @@ blockquote {
 @media (min-width: 768px) {
   .hero__img {
     height: 40vh;
-    background: url("../../dist/images/hero-styled.png") no-repeat center;
+    background: url("../images/hero-styled.png") no-repeat center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
