@@ -1,9 +1,22 @@
-// .testimonials-section{
-  
-// }
+@media(min-width:768px){
+  .testimonials-section{
+    display: flex;
+  }
+
+  .testimony{
+    flex: 1 1 33%;
+  }
+
+  .testimony__body{
+    .mark{
+      width: 100%;
+    }
+  }
+}
 
 .testimony__body{
   position: relative;
+  margin: 0 auto;
 
    p{
      margin: 0 auto;
@@ -29,4 +42,15 @@
 .testimony__qoute{
   position: absolute;
   left: 25%;
+}
+
+.testimony__qoute--mark{
+  position: absolute;
+  left: 25%;
+}
+
+@media(min-width:768px){
+  .testimony__qoute--mark{
+    left: 0;
+  }
 }

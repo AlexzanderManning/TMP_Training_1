@@ -1,3 +1,19 @@
+@media(min-width:768px){
+  .features{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    :first-child{
+      padding-right: 1rem;
+    }
+
+    :nth-child(3){
+      padding-right: 1rem;
+    }
+  }
+}
+
 .feature{
   border-bottom: .5px solid $neutral-color--1;
   margin-bottom: 1.5rem;
@@ -8,6 +24,27 @@
      font-family: $font-primary;
      color:$accent-color--2;
    }
+}
+
+@media(min-width:768px){
+  .feature{
+    margin-top: 2rem;
+    margin-bottom: 0;
+    border-bottom: none;
+    flex: 1 1 calc(50% - 1rem);
+    position: relative;
+
+    div:after{
+      content : "";
+      position: absolute;
+      right    : 0;
+      z-index: 100;
+      top  : 20%;
+      width  : 1px;
+      height   : 60%;  /* or 100px */
+      background: #555;
+    }
+  }
 }
 
 .feature-helper{

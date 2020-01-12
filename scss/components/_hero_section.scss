@@ -1,6 +1,39 @@
 .hero__img{
-  background-color: red;
   height: 15rem;
   background: url('../../dist/images/hero-mobile.png') no-repeat;
-  background-position: left -20px center ;
+  background-position: left center ;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+@media(min-width:768px){
+  .hero__img{
+    height: 40vh;
+    background: url('../../dist/images/hero-styled.png') no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
+
+@media(min-width:960px){
+  .hero__img{
+    height: 45vh;
+  }
+}
+
+@media(min-width:1920px){
+  .hero__img{
+    height: 50vh;
+  }
+}
+
+@media(min-width:2400px){
+  .hero__img{
+    height: 70vh;
+  }
 }
