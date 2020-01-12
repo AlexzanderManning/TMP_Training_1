@@ -1,6 +1,12 @@
+$bg-image--mobile:url('/dist/images/hero-mobile.png');
+
+$bg-image--desktop:url('/dist/images/hero-styled.png');
+
+
+
 .hero__img{
   height: 15rem;
-  background: url('../../dist/images/hero-mobile.png') no-repeat;
+  background: $bg-image--mobile no-repeat;
   background-position: left center ;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -12,7 +18,7 @@
 @media(min-width:768px){
   .hero__img{
     height: 40vh;
-    background: url('../../dist/images/hero-styled.png') no-repeat center;
+    background: $bg-image--desktop no-repeat center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
